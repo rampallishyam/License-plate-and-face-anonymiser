@@ -16,5 +16,5 @@ video = 'videos/2.mp4'
 source_img = 'sampleimagefortesting.jpg'
 
 # Run inference on the source
-results = model.predict(source = video, show=True) 
+results = model.predict(source = 0, show=True) 
 # print(results)
