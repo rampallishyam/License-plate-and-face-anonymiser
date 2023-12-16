@@ -1,1 +1,0 @@
-This is the fork of the main repository to try out the web implementation of the current video masking solution
