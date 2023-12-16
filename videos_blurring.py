@@ -1,11 +1,19 @@
 import cv2
 from ultralytics import YOLO
+import argparse
+
+# arg parser
+parser = argparse.ArgumentParser()
+parser.add_argument('--model_yolo', default='model/model.pt', help='path for the Yolo model')
+parser.add_argument('--source_video_path', default='videos/1.mp4', help=r'path of the input video file name with extension, for ex: C:\Users\rampa\Desktop\video.mp4')
+parser.add_argument('--output_video_path', default='output_videos/blurred_video.mp4',help='path of the output video file name with extension')
+args = parser.parse_args()
 
 # Load a pretrained YOLOv8n model
-model = YOLO('model/model.pt')
+model = YOLO(args.model_yolo)
 
 # Define path to video file
-video_path = 'videos/4.mp4'
+video_path = args.source_video_path
 
 # Load video
 cap = cv2.VideoCapture(video_path)
@@ -14,7 +22,7 @@ width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Define the output video file
-output_path = 'output_videos/blurred_video4.mp4'
+output_path = args.output_video_path
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
