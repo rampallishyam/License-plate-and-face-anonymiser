@@ -1,4 +1,4 @@
-# Blurring faces and license plates in a selected video
+# License plate and face anonymiser
 
 This repository contains a Python script for performing real-time object detection using the YOLOv8n model and blurring detected objects in a given input video. The model model.pt, which you will see below, is implemented using the Ultralytics library and pre-trained with images data from various sources. Data annotation was done using the lableImg software. More details of the software labelImg here: https://github.com/HumanSignal/labelImg.
 
