@@ -39,6 +39,14 @@ There are other python scripts that have the name videos_stream.py which is sole
 
 The script will process each frame of the input video, perform object detection using YOLOv8n, and blur the detected objects. The resulting video will be saved at the specified `output_video_path`. You can adjust the blur intensity by modifying the kernel size in the `cv2.GaussianBlur` function. For instance, cv2.GaussianBlur(roi, (99, 99), 0) part of the code refers to the maximum. You can try with lower values of (99,99) tuple for instance (50,50) for a blur with lighter intensity.
 
+##### Before blurring the faces
+
+<video src="videos/2.mp4" controls title="Title"></video>
+
+##### After blurring the faces
+
+<video src="output_videos/blurred_video2.mp4" controls title="Title"></video>
+
 ## Procedure
 
 - The YOLOv8n model is responsible for detecting objects in the video frames.
