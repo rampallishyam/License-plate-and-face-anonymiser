@@ -1,6 +1,6 @@
 # License plate and face anonymiser
 
-This repository contains a Python script for performing real-time object detection using the YOLOv8n model and blurring detected objects in a given input video. The model model.pt, which you will see below, is implemented using the Ultralytics library and pre-trained with images data from various sources. Data annotation was done using the lableImg software. More details of the software labelImg here: https://github.com/HumanSignal/labelImg.
+This repository contains a Python script for performing real-time object detection using the trained model (model.pt) and blurring faces and licence plates in a given input video. The model model.pt, which you will see below, is implemented using the Ultralytics library and pre-trained with images data from various sources. Data annotation was done using the lableImg software. More details of the software labelImg here: https://github.com/HumanSignal/labelImg.
 
 ## Prerequisites
 
@@ -21,9 +21,9 @@ git clone https://github.com/yourusername/PIIMask.git
 cd PIIMask
 ```
 
-### 2. Download YOLOv8n Model
+### 2. Select the pre-trained model (model.pt)
 
-Download the YOLOv8n model weights (e.g., `yolov8n.pt`) and place it in the `model/` directory. You can obtain the model from the official Ultralytics YOLO repository: [YOLOv8](https://github.com/ultralytics/yolov5). As part of this library, I have trained my model which can be found as model.pt under the folder as 'model/model.pt'
+As part of this library, I have trained my model which can be found as model.pt under the folder as 'model/model.pt'. 
 
 ### 3. Run the Script
 
