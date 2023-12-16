@@ -9,6 +9,7 @@ Before running the script, ensure you have the following dependencies installed:
 - Python >=3.9 
 - OpenCV (`cv2`)
 - Ultralytics library (`pip install ultralytics`)
+- torch Library as YOLO uses torch tensors. latest version should do.
 
 ## Usage
 
