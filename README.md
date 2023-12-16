@@ -9,7 +9,7 @@ Before running the script, ensure you have the following dependencies installed:
 - Python >=3.9 
 - OpenCV (`cv2`)
 - Ultralytics library (`pip install ultralytics`)
-- torch Library as YOLO uses torch tensors. latest version should do.
+- torch Library as YOLO uses torch tensors. latest version should do. Please look here for installing torch: https://pytorch.org/
 
 ## Usage
 
@@ -31,7 +31,7 @@ As part of this library, I have trained my model which can be found as model.pt 
 Execute the script by providing the required command-line arguments:
 
 ```bash
-python video_blurring.py --model_yolo model/model.pt --source_video_path videos/2.mp4 --output_video_path output_videos/blurred_video2.mp4
+python videos_blurring.py --model_yolo model/model.pt --source_video_path videos/2.mp4 --output_video_path output_videos/blurred_video2.mp4
 ```
 
 There are other python scripts that have the name videos_stream.py which is solely meant for selecting a video on your laptop and check how model.pt fairs on your video before performing the blurring task.
