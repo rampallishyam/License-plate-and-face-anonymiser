@@ -1,6 +1,7 @@
 import cv2
 from ultralytics import YOLO
 import argparse
+from ultralytics.utils.torch_utils import select_device
 
 # arg parser
 parser = argparse.ArgumentParser()
