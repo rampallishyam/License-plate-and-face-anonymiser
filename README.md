@@ -19,7 +19,7 @@ Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/PIIMask.git
-cd PIIMask
+cd License-plate-and-face-anonymiser
 ```
 
 ### 2. Select the pre-trained model (model.pt)
