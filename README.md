@@ -18,7 +18,7 @@ Before running the script, ensure you have the following dependencies installed:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/PIIMask.git
+git clone https://github.com/yourusername/License-plate-and-face-anonymizer.git
 cd License-plate-and-face-anonymiser
 ```
 
